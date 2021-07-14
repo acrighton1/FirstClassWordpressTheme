@@ -1,0 +1,343 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$primary: #000000;
+$secondary: salmon;
+
+$xl:1440px;
+$lg:992px;
+$md:768px;
+$sm:576px;
+
+
+$link-light-grey: #6c757d;
+$primary-orange: #fec503; //before: fed136
+$footer-background-light-grey: #212529;
+$footer-background-grey: #1a1d20;
+$social-buttons-circle-dark-grey: #1a1d20;
+
+
+body{
+    font-family: 'Benne', serif;
+    font-size: 16px;
+    line-height: 1.0;
+}  
+      
+.menu{
+  list-style: none;
+}
+
+
+.front-banner {    
+    height:100vh;    
+    background-size: cover; 
+    
+}
+
+.banner {
+  height: 75vh;
+  min-height: 400px; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+}
+
+
+.tm-welcome-container {
+    min-height: 400px;    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    
+  }
+  
+  .tm-welcome-title {
+    margin-bottom: 40px;
+  }
+  
+  .tm-welcome-left {
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  }
+  
+  .tm-welcome-left-col {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: black;
+    
+  }
+  
+  .tm-welcome-right {
+    color: white;
+    background-color: #ffffff;
+    padding: 80px 43px 70px;
+    height: 100%;
+  }
+  
+  .tm-welcome-icon {
+    margin-bottom: 50px;
+    display: block;
+    text-align: center;
+  }
+  
+//NAVIGATION SECTION//
+.fc-section{
+  background-color: rgb(255, 255, 255);
+}
+
+
+.navbar-nav{ 
+  font-size: 24px;
+	padding-top: 1.0rem;
+	padding-bottom: 1.0rem;
+	font-weight: 500;
+
+	     
+}
+
+.nav-link{
+ margin-left: 25px;
+  
+}
+
+#navbar-collapse{
+  margin-left:225px;
+ 
+}
+
+
+
+//for mobile nav button//
+  .navbar-toggler {
+		border: none;
+		color: $primary !important;
+		cursor: pointer;
+		padding-right: 0;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: .1em;
+		&:focus{
+			outline: none !important;
+		}
+	}
+
+//for logo area//
+  .navbar-brand {
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    span{
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 0, 0, 0.3);
+    }
+    
+  }
+
+
+  //FOOTER//  
+  a {
+    color: $link-light-grey;
+  }
+  a:hover {
+    color: $primary-orange;
+    text-decoration: none;
+  }
+  
+  ::selection {
+    background: $primary-orange;
+    text-shadow: none;
+  }
+  
+  footer {
+    padding: 2rem 0;
+    background-color: #212529;
+    // .container .row:not(:last-child) {
+    //   padding-bottom: 2rem;
+    // }
+  }
+  
+  .footer-column:not(:first-child) {
+      padding-top: 2rem;
+      @media (min-width: 768px) {
+        padding-top: 0rem;
+      }
+    }
+  
+  .footer-column {
+    text-align: center;
+    //border: red solid 1px;
+    .nav-item {
+      .nav-link {
+        padding: 0.1rem 0;
+      }
+      span.nav-link {
+        color: $link-light-grey;
+      }
+      span.footer-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      .fas {
+        margin-right: 0.5rem;
+      }
+    }
+    ul {
+      display: inline-block;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+      //border: yellow solid 1px;
+    }
+  }
+  
+  ul.social-buttons {
+    margin-bottom: 0;
+  }
+  
+  ul.social-buttons li a:active,
+  ul.social-buttons li a:focus,
+  ul.social-buttons li a:hover {
+    transform: scale(1.5);
+  }
+  
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+    background-color: $footer-background-grey;
+    margin-left:20px;
+  }
+  
+  footer .quick-links {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .copyright {
+    color: white;
+  }
+   
+  .fa-grip-lines {
+    color: white;
+    padding: 2rem 0;
+  }
+
+  .entry-footer{
+    background-color: rgb(255, 255, 255);
+  }
+
+  
+  
+  
+  .col-md {
+    background-color: rgb(255, 255, 255); 
+  }
+
+
+
+  #secondary img, article img, figure, img, img.wp-post-image {
+    align-items: center;
+
+  }
+
+  #right-sidebar{
+    position: sticky;
+    background-color: rgb(255, 255, 255) ;
+  }
+
+  .widget-title {
+    color:rgb(0, 0, 0);
+  }
+
+  .recent-comments-2 {
+    color:rgb(255, 255, 255);
+  }
+
+  #text-2 {
+    color:rgb(0, 0, 0);
+    font-family: 'Benne', serif;
+
+  
+  }
+
+  .widget-title-footer{
+    color:white;
+  }
+
+  #menu-social-icons-1{
+    display: flex;
+    justify-content: space-around;
+
+ 
+   
+  }
+
+  #menu-social-icons{
+    display: flex;
+    justify-content: space-around;
+  
+
+ 
+   
+  }
+
+//all page and post titles//
+.entry-title{
+  text-align: center;
+}
+
+//footer titles//
+.widget-title-footer{
+  font-size: 24px;
+}
+
+/*form button for contact form
+.btn-outline-primary, .wpcf7 input[type=submit] {
+  color: #000;
+  background-color: black;
+  border-color: #000;
+  color: white;
+}*/
+
+//all widget titles//
+.widget-title{
+  text-align: center;
+}
+
+//for block entry title info//
+.entry-meta{
+  text-align: center;
+}
+
+
+//sidebar image//
+.sidebar .widget_media_image img { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  
+
+}
